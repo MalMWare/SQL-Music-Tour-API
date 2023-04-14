@@ -9,18 +9,14 @@ module.exports = {
         primaryKey: true,
         allowNull: false,
       },
-      name: {
-        type: Sequelize.STRING,
-        allowNull: false,
+      event_id: {
+        type: Sequelize.SMALLINT,
+        allowNull: false
       },
-      start_time: {
-        type: Sequelize.DATE,
-        allowNull: false,
-      },
-      end_time: {
-        type: Sequelize.DATE,
-        allowNull: false,
-      },
+      stage_id: {
+        type: Sequelize.SMALLINT,
+        allowNull: false
+      }
     });
   },
   async down(queryInterface, Sequelize) {

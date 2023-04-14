@@ -9,9 +9,17 @@ module.exports = {
         primaryKey: true,
         allowNull: false,
       },
-      name: {
-        type: Sequelize.STRING,
-        allowNull: false,
+      band_id: {
+        type: Sequelize.SMALLINT,
+        allowNull: false
+      },
+      event_id: {
+        type: Sequelize.SMALLINT,
+        allowNull: false
+      },
+      stage_id: {
+        type: Sequelize.SMALLINT,
+        allowNull: false
       },
       start_time: {
         type: Sequelize.DATE,

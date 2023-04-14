@@ -18,19 +18,15 @@ module.exports = (sequelize, DataTypes) => {
       type: DataTypes.INTEGER,
       primaryKey: true,
       autoIncrement: true
-    }, 
-    name: {
-      type: DataTypes.STRING,
+    },
+    event_id: {
+      type: DataTypes.SMALLINT,
       allowNull: false
     },
-    start_time: {
-      type: DataTypes.DATE,
+    stage_id: {
+      type: DataTypes.SMALLINT,
       allowNull: false
-    },
-    end_time: {
-      type: DataTypes.DATE,
-      allowNull: false
-  }, 
+    }
 }, {
     sequelize,
     modelName: 'Stage_Events',

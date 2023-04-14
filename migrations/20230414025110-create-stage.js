@@ -12,15 +12,7 @@ module.exports = {
       name: {
         type: Sequelize.STRING,
         allowNull: false,
-      },
-      start_time: {
-        type: Sequelize.DATE,
-        allowNull: false,
-      },
-      end_time: {
-        type: Sequelize.DATE,
-        allowNull: false,
-      },
+      }
     });
   },
   async down(queryInterface, Sequelize) {
